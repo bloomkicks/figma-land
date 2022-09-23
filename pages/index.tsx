@@ -1,9 +1,8 @@
-import type { NextPage } from 'next'
+import Typography from "@mui/material/Typography";
+import type { NextPage } from "next";
 
 const Home: NextPage = () => {
-  return (
-    <h1>I work</h1>
-  )
-}
+  return <Typography>I work</Typography>;
+};
 
-export default Home
+export default Home;
