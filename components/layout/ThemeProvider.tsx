@@ -21,6 +21,9 @@ const theme = createTheme({
       default: "transparent",
       paper: "#252B42",
     },
+    darkBg: {
+      text: "#ffffff",
+    },
   },
   typography: {
     fontFamily: [
@@ -30,11 +33,6 @@ const theme = createTheme({
       "sans-serif",
     ].join(","),
     fontSize: 18,
-    h1: {
-      fontSize: 74,
-      lineHeight: "84px",
-      fontWeight: "bold",
-    },
     h2: {
       fontSize: 48,
       lineHeight: "55px",
@@ -74,7 +72,7 @@ const theme = createTheme({
         root: {
           borderRadius: "100px",
           textTransform: "none",
-          padding: "12px 18px"
+          padding: "12px 18px",
         },
       },
     },
@@ -91,12 +89,12 @@ const theme = createTheme({
           "& .MuiInputBase-input": {
             zIndex: "1",
             padding: "16.5px 18px",
-            fontSize: '15px'
+            fontSize: "15px",
           },
           "& .MuiInputLabel-animated": {
-            top: '-1.3px',
-            left: 2
-          }
+            top: "-1.3px",
+            left: 2,
+          },
         },
       },
     },
@@ -107,6 +105,17 @@ const theme = createTheme({
     },
   },
 });
+
+theme.typography.h1 = {
+  fontSize: 48,
+  lineHeight: "55px",
+  fontWeight: "400",
+  [theme.breakpoints.up("md")]: {
+    fontSize: 74,
+    lineHeight: "84px",
+    fontWeight: "bold",
+  },
+};
 
 const ThemeProvider = ({
   children,
