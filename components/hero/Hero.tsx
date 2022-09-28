@@ -13,8 +13,8 @@ const Hero = () => {
         width: "100%",
         position: "relative",
         textAlign: "center",
-        pb: '300px',
-        mb: 11
+        pb: '250px',
+        mb: 20
       }}
     >
       <Background />

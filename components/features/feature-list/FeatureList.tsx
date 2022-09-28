@@ -23,7 +23,7 @@ let features = [
 ];
 const FeatureList = () => {
   return (
-    <Stack alignItems="center" spacing={9.5} sx={{ px: "10%" }}>
+    <Stack alignItems="center" spacing={9.5} sx={{ px: "17%" }}>
       {features.map((feature) => (
         <FeatureItem {...feature} />
       ))}

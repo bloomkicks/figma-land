@@ -13,7 +13,7 @@ const FeatureItem = ({
   return (
     <Box textAlign="center">
       <img src={logoSrc} alt="" />
-      <Typography variant="h3" my={2}>
+      <Typography variant="h3" my={1.8}>
         {feature}
       </Typography>
       <Typography variant="body1">{description}</Typography>

@@ -1,3 +1,5 @@
+import Video from "./Video";
+import Image from "next/image";
 import FeatureList from "./feature-list/FeatureList";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
@@ -7,14 +9,15 @@ const Features = () => {
     <Stack
       textAlign="center"
       alignItems="center"
-      sx={{ px: "10%" }}
+      sx={{ mb: 20 }}
     >
-      <Typography variant="h2" mb={2.7}>
+      <Typography variant="h2" mb={2.6} maxWidth="85%">
         Features
       </Typography>
-      <Typography variant="h4" mb={8.7}>
+      <Typography variant="h4" maxWidth="85%">
         Most calendars are designed for teams.
       </Typography>
+      <Video />
       <FeatureList />
     </Stack>
   );
