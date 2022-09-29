@@ -4,13 +4,7 @@ import Image from "next/image";
 import Stack from "@mui/material/Stack";
 
 let logos = ["twitter", "facebook", "instagram"];
-const SocialNets = ({
-  isMobile,
-  sx,
-}: {
-  isMobile?: boolean;
-  sx?: object;
-}) => {
+const SocialNets = ({ isMobile, sx }: { isMobile?: boolean; sx?: object }) => {
   return (
     <Stack
       component="nav"
@@ -21,7 +15,7 @@ const SocialNets = ({
         ml: "auto",
         display: {
           xs: isMobile ? "flex" : "none",
-          md: isMobile ? "none" : "flex"
+          md: isMobile ? "none" : "flex",
         },
         ...sx,
       }}

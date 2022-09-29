@@ -4,12 +4,7 @@ import React from "react";
 
 const Video = () => {
   return (
-    <Box
-      maxWidth="90%"
-      width="620px"
-      position="relative"
-      my={8.5}
-    >
+    <Box maxWidth="90%" width="620px" position="relative" my={8.5}>
       <Image
         src="/images/features/video-picture-screen.png"
         width={386}

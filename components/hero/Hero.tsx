@@ -13,8 +13,8 @@ const Hero = () => {
         width: "100%",
         position: "relative",
         textAlign: "center",
-        pb: '250px',
-        mb: 20
+        pb: "250px",
+        mb: 20,
       }}
     >
       <Background />
@@ -30,10 +30,7 @@ const Hero = () => {
         </Typography>
         <Typography variant="h4" color="darkBg.text" mt={2}>
           Most calendars are designed for teams.
-          <Typography
-            variant="inherit"
-            display={{ xs: "none", sm: "inline" }}
-          >
+          <Typography variant="inherit" display={{ xs: "none", sm: "inline" }}>
             {" "}
             Slate is designed for freelancers
           </Typography>

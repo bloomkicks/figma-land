@@ -1,39 +1,24 @@
+import MobileContainer from "./nav-container/MobileContainer";
+import DesktopContainer from "./nav-container/DesktopContainer";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import SocialNets from "./SocialNets";
-import Stack from "@mui/material/Stack";
 import NavLink from "./NavLink";
 
 let links = ["home", "product", "pricing", "about", "contact"];
 
-const NavBar = ({ isActive }: { isActive?: boolean }) => {
+const NavBar = ({ open }: { open: boolean }) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
+  const Container = isMobile ? MobileContainer : DesktopContainer;
+
   return (
-    <Stack
-      component="nav"
-      direction={{ xs: "column", md: "row" }}
-      spacing={{ xs: "28px", md: "21px" }}
-      sx={{
-        mr: 10,
-        width: { xs: "100%", md: "auto" },
-        height: { xs: "100%", md: "auto" },
-        bgcolor: { xs: "background.paper", md: "transparent" },
-        position: { xs: "fixed", md: "static" },
-        left: 0,
-        top: 0,
-        alignItems: "center",
-        justifyContent: { xs: "center", md: "flex-start" },
-        transition: "transform 0.4s ease-in-out",
-        transform: {
-          xs: isActive ? "translateX(0)" : "translateX(100%)",
-          md: "translateX(0)",
-        },
-      }}
-    >
+    <Container open={open}>
       {links.map((link) => (
         <NavLink
           href={`/${link}`}
-          name={
-            link[0].toUpperCase() +
-            link.split("").slice(1).join("")
-          }
+          name={link[0].toUpperCase() + link.split("").slice(1).join("")}
         />
       ))}
       <SocialNets
@@ -44,7 +29,7 @@ const NavBar = ({ isActive }: { isActive?: boolean }) => {
           top: "40px",
         }}
       />
-    </Stack>
+    </Container>
   );
 };
 

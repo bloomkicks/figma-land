@@ -6,12 +6,8 @@ import Stack from "@mui/material/Stack";
 
 const Features = () => {
   return (
-    <Stack
-      textAlign="center"
-      alignItems="center"
-      sx={{ mb: 20 }}
-    >
-      <Typography variant="h2" mb={2.6} maxWidth="85%">
+    <Stack textAlign="center" alignItems="center" sx={{ mb: 20 }}>
+      <Typography variant="h2" mb={2.2} maxWidth="85%">
         Features
       </Typography>
       <Typography variant="h4" maxWidth="85%">

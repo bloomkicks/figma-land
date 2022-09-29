@@ -3,13 +3,7 @@ import Typography from "@mui/material/Typography";
 import NextLink from "next/link";
 import React from "react";
 
-const NavLink = ({
-  href,
-  name,
-}: {
-  href: string;
-  name: string;
-}) => {
+const NavLink = ({ href, name }: { href: string; name: string }) => {
   return (
     <NextLink href={href} passHref>
       <Typography
@@ -38,10 +32,7 @@ const NavLink = ({
           width="0"
           sx={{
             transition: "width 0.3s ease-out",
-            bgcolor: {
-              xs: "darkBg.text",
-              md: "background.default",
-            },
+            bgcolor: "darkBg.text",
           }}
           height="3px"
         ></Box>

@@ -8,10 +8,10 @@ import AppBar from "@mui/material/AppBar";
 import { useState } from "react";
 
 const Header = () => {
-  const [isActive, setIsActive] = useState<boolean>(false);
+  const [open, setOpen] = useState<boolean>(false);
 
   function menuClickHandler() {
-    setIsActive((prev) => !prev);
+    setOpen((prev) => !prev);
   }
 
   return (
@@ -33,37 +33,44 @@ const Header = () => {
           justifyContent: { xs: "space-between", md: "center" },
         }}
       >
-        <NavBar isActive={isActive} />
+        <NavBar open={open} />
         <Link href="/main" passHref>
           <Box
             component="a"
             position="relative"
             right={{ xs: 0, md: "30px" }}
+            zIndex={10}
+            sx={{
+              position: {
+                xs: open ? "fixed" : "absolute",
+                md: "relative",
+              },
+              top: { xs: open ? 28 : 0, md: 0 },
+              left: { xs: 40, md: 0 },
+            }}
           >
-            <Image
-              src="/logos/light-logo.png"
-              width={186}
-              height={58}
-            />
+            <Image src="/logos/light-logo.png" width={186} height={58} />
           </Box>
         </Link>
         <SocialNets isMobile={false} />
         <Box
           component="button"
-          position="relative"
           top="2.5px"
           onClick={menuClickHandler}
           display={{ xs: "block", md: "none" }}
           sx={{
             bgcolor: "transparent",
             borderColor: "transparent",
+            zIndex: 10,
+            position: {
+              xs: open ? "fixed" : "absolute",
+              md: "relative",
+            },
+            top: { xs: open ? 48 : 20, md: 0 },
+            right: { xs: 30, md: 0 },
           }}
         >
-          <Image
-            src="/images/general/ham-menu.png"
-            width={30}
-            height={18}
-          />
+          <Image src="/images/general/ham-menu.png" width={30} height={18} />
         </Box>
       </Toolbar>
     </AppBar>
