@@ -10,11 +10,12 @@ const PartnerItem = ({ name, logoSrc }: { name: string; logoSrc: string }) => {
       py={2.5}
       px={2}
       height="165px"
-      maxWidth="85%"
+      minWidth="200px"
+      maxWidth="100%"
       sx={{
         border: "1.6px solid black",
         borderColor: "#c5c5c5",
-        width: { xs: "85%", sm: "auto" },
+        width: { xs: "365px", md: "auto" },
       }}
     >
       <Typography variant="h5" mb={1.5}>

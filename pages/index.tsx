@@ -1,3 +1,4 @@
+import Testimonials from "../components/testimonials/Testimonials";
 import Partners from "../components/partners/Partners";
 import FastestWay from "../components/fastest-way/FastestWay";
 import Newsletter from "../components/newsletter/Newsletter";
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
       <FastestWay />
       <Newsletter />
       <Partners />
+      <Testimonials />
     </Stack>
   );
 };

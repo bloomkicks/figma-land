@@ -26,7 +26,16 @@ let partners = [
 
 const PartnerList = () => {
   return (
-    <Stack spacing={3.8} alignItems="center">
+    <Stack
+      direction={{ xs: "column", md: "row" }}
+      spacing={{ xs: 3.8, md: "-1.6px" }}
+      justifyContent="center"
+      alignItems="center"
+      flexWrap="wrap"
+      sx={{
+        mx: 5,
+      }}
+    >
       {partners.map((partner) => (
         <PartnerItem {...partner} />
       ))}

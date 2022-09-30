@@ -1,10 +1,11 @@
+import Button from "@mui/material/Button";
 import PartnerList from "./partner-list/PartnerList";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
 const Partners = () => {
   return (
-    <Box textAlign="center">
+    <Box textAlign="center" mb={12}>
       <Typography variant="h2" mb={2.2}>
         Partners
       </Typography>
@@ -12,6 +13,7 @@ const Partners = () => {
         Most calendars are designed for teams.
       </Typography>
       <PartnerList />
+      <Button sx={{ px: 6, mt: 8.5 }}>Try For Free</Button>
     </Box>
   );
 };
