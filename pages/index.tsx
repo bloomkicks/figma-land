@@ -1,3 +1,4 @@
+import Pricing from "../components/pricing/Pricing";
 import Testimonials from "../components/testimonials/Testimonials";
 import Partners from "../components/partners/Partners";
 import FastestWay from "../components/fastest-way/FastestWay";
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       <Newsletter />
       <Partners />
       <Testimonials />
+      <Pricing /> 
     </Stack>
   );
 };

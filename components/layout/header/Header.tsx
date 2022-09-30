@@ -40,6 +40,7 @@ const Header = () => {
             position="relative"
             right={{ xs: 0, md: "30px" }}
             zIndex={10}
+            maxWidth="186px"
             sx={{
               position: {
                 xs: open ? "fixed" : "absolute",
@@ -49,7 +50,12 @@ const Header = () => {
               left: { xs: 40, md: 0 },
             }}
           >
-            <Image src="/logos/light-logo.png" width={186} height={58} />
+            <Image
+              src="/logos/light-logo.png"
+              width={186}
+              height={58}
+              layout="responsive"
+            />
           </Box>
         </Link>
         <SocialNets isMobile={false} />
@@ -61,6 +67,7 @@ const Header = () => {
           sx={{
             bgcolor: "transparent",
             borderColor: "transparent",
+            borderRadius: "2px",
             zIndex: 10,
             position: {
               xs: open ? "fixed" : "absolute",
@@ -68,9 +75,15 @@ const Header = () => {
             },
             top: { xs: open ? 48 : 20, md: 0 },
             right: { xs: 30, md: 0 },
+            p: 2,
+            mt: -1.5,
           }}
         >
-          <Image src="/images/general/ham-menu.png" width={30} height={18} />
+          <Image
+            src="/images/general/ham-menu.png"
+            width={30}
+            height={18}
+          />
         </Box>
       </Toolbar>
     </AppBar>

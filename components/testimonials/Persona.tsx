@@ -6,7 +6,14 @@ import Box from "@mui/material/Box";
 const Persona = () => {
   return (
     <Stack direction="row" justifyContent="center">
-      <Box height="45px" width="45px" position="relative">
+      <Box
+        height="45px"
+        width="45px"
+        position="relative"
+        borderRadius="50%"
+        border="1px solid"
+        borderColor="black"
+      >
         <Image
           src="/images/testimonials/profile-pic.png"
           width={42}
@@ -19,11 +26,18 @@ const Persona = () => {
       <Box display="inline-block" ml={1.5} my="auto">
         <Typography
           variant="h3"
-          sx={{ fontSize: "10.14px", lineHeight: "12px" }}
+          display={{ xs: "block", sm: "none" }}
+          sx={{ fontSize: "11.5px", lineHeight: "12px" }}
         >
           Organize across
         </Typography>
-        <Typography variant="body1" sx={{ fontSize: "12.7px" }}>
+        <Typography
+          variant="h5"
+          display={{ xs: "none", sm: "block" }}
+        >
+          Organize across
+        </Typography>
+        <Typography variant="body1" sx={{ fontSize: "13.5px" }}>
           Ui designer
         </Typography>
       </Box>

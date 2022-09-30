@@ -11,7 +11,7 @@ const FeatureItem = ({
   logoSrc: string;
 }) => {
   return (
-    <Box textAlign="center">
+    <Box textAlign="center" maxWidth="235px">
       <img src={logoSrc} alt="" />
       <Typography variant="h3" my={1.8}>
         {feature}

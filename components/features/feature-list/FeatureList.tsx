@@ -23,7 +23,12 @@ let features = [
 ];
 const FeatureList = () => {
   return (
-    <Stack alignItems="center" spacing={9.5} sx={{ px: "17%" }}>
+    <Stack
+      direction={{ xs: "column", md: "row" }}
+      alignItems={{ xs: "center", md: "flex-start" }}
+      spacing={9.5}
+      sx={{ px: "17%" }}
+    >
       {features.map((feature) => (
         <FeatureItem {...feature} />
       ))}

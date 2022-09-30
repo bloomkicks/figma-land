@@ -1,19 +1,39 @@
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
+import Stack from "@mui/material/Stack";
 import SubscribeForm from "./SubscribeForm";
 import Image from "next/image";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
 const Newsletter = () => {
+  const theme = useTheme();
+  const isDektop = useMediaQuery(theme.breakpoints.up("md"));
+
   return (
-    <Box textAlign="center" mb={12} maxWidth="85%" mx="auto">
-      <Typography variant="h3">At your fingertips</Typography>
-      <Typography variant="h2" my={2.2}>
-        Newsletter
-      </Typography>
-      <Typography variant="h4">
-        Slate is designed for freelancers
-      </Typography>
-      <Box my={8.5} mx="auto">
+    <Stack
+      direction={{ xs: "column", md: "row-reverse" }}
+      textAlign={{ xs: "center", md: "left" }}
+      mb={12}
+    >
+      <Box>
+        <Typography variant="h3">At your fingertips</Typography>
+        <Typography variant="h2" my={2.2}>
+          {isDektop
+            ? "Lightning fast prototyping"
+            : "Newsletter"}
+        </Typography>
+        <Typography
+          variant="h4"
+          mx="auto"
+          maxWidth="85%"
+          display={{ xs: "block", md: "none" }}
+        >
+          Slate is designed for freelancers
+        </Typography>
+        {isDektop && <SubscribeForm isDesktop />}
+      </Box>
+      <Box my={8.5} width="95%" mx="auto" height="auto">
         <Image
           src="/images/general/newsletter-vector.png"
           width={389}
@@ -21,8 +41,8 @@ const Newsletter = () => {
           layout="responsive"
         />
       </Box>
-      <SubscribeForm />
-    </Box>
+      {!isDektop && <SubscribeForm />}
+    </Stack>
   );
 };
 

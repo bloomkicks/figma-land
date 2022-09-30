@@ -36,7 +36,7 @@ const PartnerList = () => {
         mx: 5,
       }}
     >
-      {partners.map((partner) => (
+      {partners.slice(0, 3).map((partner) => (
         <PartnerItem {...partner} />
       ))}
     </Stack>

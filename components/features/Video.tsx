@@ -2,9 +2,18 @@ import Box from "@mui/material/Box";
 import Image from "next/image";
 import React from "react";
 
-const Video = () => {
+const Video = ({ mobile }: { mobile?: boolean }) => {
   return (
-    <Box maxWidth="90%" width="620px" position="relative" my={8.5}>
+    <Box
+      maxWidth="90%"
+      width="620px"
+      position="relative"
+      my={8.5}
+      display={{
+        xs: mobile ? "block" : "none",
+        md: mobile ? "none" : "block",
+      }}
+    >
       <Image
         src="/images/features/video-picture-screen.png"
         width={386}
