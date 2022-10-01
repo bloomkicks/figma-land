@@ -8,17 +8,21 @@ const OptionItem = ({
   description,
   price,
   features,
+  isMain,
 }: {
   name: string;
   description: string;
   price: string;
   features: string[];
+  isMain?: boolean;
 }) => {
   return (
     <Card
       sx={{
-        bgcolor: "darkBg.text",
-        color: "background.paper",
+        bgcolor: isMain ? "primary.main" : "darkBg.text",
+        color: isMain
+          ? "primary.contrastText"
+          : "background.paper",
         py: 5,
         px: 5,
         textAlign: "center",
@@ -44,7 +48,25 @@ const OptionItem = ({
           {feature}
         </Typography>
       ))}
-      <Button sx={{ px: 6, mt: 5 }}>Order Now</Button>
+      <Button
+        sx={{
+          px: 6,
+          mt: 5,
+          bgcolor: isMain
+            ? "primary.contrastText"
+            : "primary.main",
+          color: isMain
+            ? "primary.main"
+            : "primary.contrastText",
+          "&:hover": isMain
+            ? {
+                bgcolor: "#dfdfdf",
+              }
+            : {},
+        }}
+      >
+        Order Now
+      </Button>
     </Card>
   );
 };

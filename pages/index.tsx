@@ -1,3 +1,4 @@
+import Contact from "../components/contact/Contact";
 import Pricing from "../components/pricing/Pricing";
 import Testimonials from "../components/testimonials/Testimonials";
 import Partners from "../components/partners/Partners";
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
       <Partners />
       <Testimonials />
       <Pricing /> 
+      <Contact />
     </Stack>
   );
 };

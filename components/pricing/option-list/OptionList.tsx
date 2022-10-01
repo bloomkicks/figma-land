@@ -25,6 +25,7 @@ let options = [
       "Pricing Feature",
       "Pricing Feature",
     ],
+    isMain: true,
   },
   {
     name: "business",
@@ -42,7 +43,12 @@ let options = [
 
 const OptionList = () => {
   return (
-    <Stack alignItems="center" spacing={6.5}>
+    <Stack
+      direction={{ xs: "column", lg: "row" }}
+      justifyContent="center"
+      alignItems="center"
+      spacing={6.5}
+    >
       {options.map((option) => (
         <OptionItem {...option} key={option.name} />
       ))}

@@ -10,8 +10,16 @@ const Pricing = () => {
       py={13}
       bgcolor="background.paper"
     >
-      <Typography variant="h2">Pricing</Typography>
-      <Typography variant="h4">
+      <Typography variant="h2" color="primary.contrastText" mb={2}>
+        Pricing
+      </Typography>
+      <Typography
+        variant="h4"
+        color="primary.contrastText"
+        maxWidth="85%"
+        mx="auto"
+        mb={12}
+      >
         Most calendars are designed for teams.
       </Typography>
       <OptionList />
