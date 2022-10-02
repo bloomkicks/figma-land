@@ -37,7 +37,11 @@ let authors = [
 
 const AuthorList = () => {
   return (
-    <Stack spacing={10} sx={{ mb: 10 }}>
+    <Stack
+      direction={{ xs: "column", md: "row" }}
+      spacing={10}
+      sx={{ mb: { md: 6 } }}
+    >
       {authors.map((author) => (
         <AuthorItem {...author} />
       ))}

@@ -1,4 +1,7 @@
-import { ThemeProvider as Provider, createTheme } from "@mui/material/styles";
+import {
+  ThemeProvider as Provider,
+  createTheme,
+} from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
 const theme = createTheme({
@@ -23,7 +26,12 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: ["Rubik", "Roboto", "-apple-system", "sans-serif"].join(","),
+    fontFamily: [
+      "Rubik",
+      "Roboto",
+      "-apple-system",
+      "sans-serif",
+    ].join(","),
     fontSize: 18,
     h2: {
       fontSize: 48,
@@ -75,9 +83,12 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           "& .MuiOutlinedInput-notchedOutline": {
-            borderRadius: "100px",
+            borderRadius: "27px",
             backgroundColor: "#F5F5F5",
-            border: "none",
+            border: "1px solid #E8E8E8",
+          },
+          "& .MuiOutlinedInput-notchedOutline > legend": {
+            maxWidth: '0.01px !important'
           },
           "& .MuiInputBase-input": {
             zIndex: "1",
@@ -113,7 +124,11 @@ theme.typography.h1 = {
   },
 };
 
-const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
+const ThemeProvider = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
   return (
     <Provider theme={theme}>
       <CssBaseline />

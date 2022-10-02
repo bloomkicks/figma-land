@@ -11,7 +11,8 @@ const ContactItem = ({
 }) => {
   return (
     <Stack
-      direction="row"
+      direction={{ xs: "row", md: "column" }}
+      spacing={1.7}
       alignItems="center"
       justifyContent="flex-start"
     >
@@ -26,9 +27,8 @@ const ContactItem = ({
       <Typography
         variant="h5"
         sx={{
-          ml: 1.7,
-          maxWidth: "85%",
-          textAlign: "left",
+          maxWidth: {xs: '85%', md: 300},
+          textAlign: { xs: "left", md: "center" },
         }}
       >
         {text}

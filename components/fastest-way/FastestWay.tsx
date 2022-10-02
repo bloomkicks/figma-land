@@ -11,7 +11,7 @@ const FastestWay = () => {
       textAlign="center"
       width="85%"
       maxWidth="1366px"
-      sx={{ mb: 22, mx: "auto" }}
+      sx={{ mb: 22, mx: "auto", py: { xs: 0, lg: 10 } }}
       direction="row"
       alignItems="flex-start"
       justifyContent="center"

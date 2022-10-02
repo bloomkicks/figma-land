@@ -1,7 +1,7 @@
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
-import FormGroup from "@mui/material/FormGroup";
 import Typography from "@mui/material/Typography";
+import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 
 const SubscribeForm = ({
@@ -16,34 +16,39 @@ const SubscribeForm = ({
   return (
     <Box
       maxWidth="90%"
-      width="350px"
-      mx="auto"
+      width={{ xs: 400, md: 500 }}
+      minWidth="340px"
       display={{
         xs: isDesktop ? "none" : "block",
         md: isDesktop ? "block" : "none",
       }}
       mt={{ xs: 0, md: 8.5 }}
     >
-      <Typography variant="h3" mb={1.2}>
+      <Typography variant="h3">
         Subscribe to our Newsletter
       </Typography>
       <Typography variant="body1" mb={4.3}>
         Available exclusivery on Figmaland
       </Typography>
-      <Box
+      <Stack
         component="form"
-        sx={{ width: "100%" }}
         onSubmit={subscribeHandler}
+        spacing={1}
+        direction={{ xs: "column", md: "row" }}
+        sx={{
+          width: "100%",
+          alignItems: { xs: "stretch", md: "flex-start" },
+          flexWrap: "no-wrap",
+        }}
       >
         <TextField
           label="Your Email"
-          fullWidth
-          sx={{ mb: 1.5 }}
+          sx={{ mb: 1.5, width: "100%" }}
         />
-        <Button fullWidth type="submit">
+        <Button type="submit" sx={{ px: 5 }}>
           Subscribe
         </Button>
-      </Box>
+      </Stack>
     </Box>
   );
 };

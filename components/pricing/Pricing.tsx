@@ -8,10 +8,14 @@ const Pricing = () => {
       component="article"
       textAlign="center"
       width="100%"
-      py={13}
+      py={{ xs: 13, md: 16 }}
       bgcolor="background.paper"
     >
-      <Typography variant="h2" color="primary.contrastText" mb={2}>
+      <Typography
+        variant="h2"
+        color="primary.contrastText"
+        mb={2}
+      >
         Pricing
       </Typography>
       <Typography

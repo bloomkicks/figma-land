@@ -1,7 +1,7 @@
-import Price from "./Price";
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import Button from "@mui/material/Button";
+import Price from "./Price";
 
 const OptionItem = ({
   name,
@@ -23,10 +23,13 @@ const OptionItem = ({
         color: isMain
           ? "primary.contrastText"
           : "background.paper",
-        py: 5,
-        px: 5,
+        py: { xs: 5, md: isMain ? 10 : 5 },
+        px: { xs: 5, md: 7 },
         textAlign: "center",
         borderRadius: "15px",
+        minWidth: "320px",
+        width: { xs: "80%", md: "auto" },
+        maxWidth: { xs: "450px", md: "auto" },
       }}
     >
       <Typography

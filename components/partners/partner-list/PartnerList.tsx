@@ -1,10 +1,16 @@
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
 import PartnerItem from "./PartnerItem";
-import Stack from "@mui/material/Stack";
+import Stack from "@mui/material/Stack" 
 
 let partners = [
   {
     name: "Google",
     logoSrc: "/images/partners/google.png",
+  },
+  {
+    name: "Amazon",
+    logoSrc: "/images/partners/amazon.png",
   },
   {
     name: "Microsoft",
@@ -15,16 +21,27 @@ let partners = [
     logoSrc: "/images/partners/uber.png",
   },
   {
-    name: "Amazon",
-    logoSrc: "/images/partners/amazon.png",
-  },
-  {
     name: "Dropbox",
     logoSrc: "/images/partners/dropbox.png",
+  },
+  {
+    name: "Google",
+    logoSrc: "/images/partners/google.png",
+  },
+  {
+    name: "Uber",
+    logoSrc: "/images/partners/uber.png",
+  },
+  {
+    name: "Amazon",
+    logoSrc: "/images/partners/amazon.png",
   },
 ];
 
 const PartnerList = () => {
+  const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
+
   return (
     <Stack
       direction={{ xs: "column", md: "row" }}
@@ -36,9 +53,11 @@ const PartnerList = () => {
         mx: 5,
       }}
     >
-      {partners.slice(0, 3).map((partner) => (
-        <PartnerItem {...partner} />
-      ))}
+      {partners
+        .slice(0, isDesktop ? partners.length : 3)
+        .map((partner) => (
+          <PartnerItem {...partner} />
+        ))}
     </Stack>
   );
 };

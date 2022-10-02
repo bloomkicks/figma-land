@@ -14,15 +14,23 @@ const Newsletter = () => {
     <Stack
       component="article"
       direction={{ xs: "column", md: "row-reverse" }}
+      justifyContent="center"
+      alignItems="center"
       textAlign={{ xs: "center", md: "left" }}
       mb={22}
     >
       <Box>
         <Typography variant="h3">At your fingertips</Typography>
         <Typography variant="h2" my={2.2}>
-          {isDektop
-            ? "Lightning fast prototyping"
-            : "Newsletter"}
+          {isDektop ? (
+            <>
+              Lightning fast
+              <br />
+              prototyping
+            </>
+          ) : (
+            "Newsletter"
+          )}
         </Typography>
         <Typography
           variant="h4"
@@ -34,7 +42,15 @@ const Newsletter = () => {
         </Typography>
         {isDektop && <SubscribeForm isDesktop />}
       </Box>
-      <Box my={8.5} width="95%" mx="auto" height="auto">
+      <Box
+        my={8.5}
+        width={{ xs: "95%", md: "680px" }}
+        maxWidth={{ xs: "550px", md: "680px" }}
+        mx={{ xs: "auto", md: 0 }}
+        mr={{ xs: "auto", md: 7.5, lg: 10, xl: 15 }}
+        ml={{ md: 5 }}
+        height="auto"
+      >
         <Image
           src="/images/general/newsletter-vector.png"
           width={389}

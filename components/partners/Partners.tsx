@@ -9,6 +9,7 @@ const Partners = () => {
       component="article"
       textAlign="center"
       mb={22}
+      pb={{ xs: 0, lg: 10 }}
       maxWidth="85%"
       mx="auto"
     >

@@ -9,7 +9,7 @@ const AuthorItem = ({
   authors: string[];
 }) => {
   return (
-    <Stack spacing={2.2}>
+    <Stack component="section" spacing={2.2}>
       <Typography variant="h3">{header}</Typography>
       {authors.map((author) => (
         <Typography variant="h6" component="p">

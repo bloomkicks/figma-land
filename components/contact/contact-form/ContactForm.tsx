@@ -3,25 +3,24 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import Card from "@mui/material/Card";
-import Box from "@mui/material/Box";
 
 const ContactForm = () => {
   return (
     <Card
       sx={{
         bgcolor: "primary.contrastText",
+        border: "1px solid #DDDDDD",
         borderRadius: "15px",
         width: "90%",
-        minWidth: "350px",
-        maxWidth: '600px',
-        mx: "auto",
-        px: 2,
-        pt: 5.5,
-        mt: 7,
+        minWidth: "340px",
+        maxWidth: "500px",
+        mx: { xs: "auto", lg: 0 },
+        pt: 6.5,
+        mb: { md: 10, lg: 0 },
         boxShadow: ` 
-          rgba(0, 0, 0, 0.4) 0px 1px 2px -1px, 
-          rgba(0, 0, 0, 0.28) 0px 0px 2px 0.5px, 
-          rgba(0, 0, 0, 0.26) 0px 0px 3.7px 0.5px
+          rgba(0, 0, 0, 0.2) 0px 0px 2px -1px, 
+          rgba(0, 0, 0, 0.14) 0px 1px 4px 0px, 
+          rgba(0, 0, 0, 0.13) 1px 1px 5.7px 1px
         `,
       }}
     >
@@ -32,7 +31,7 @@ const ContactForm = () => {
         component="form"
         spacing={5}
         alignItems="stretch"
-        sx={{ maxWidth: "90%", mx: "auto" }}
+        sx={{ maxWidth: "75%", minWidth: "310px", mx: "auto" }}
       >
         <TextField label="Your Name" />
         <TextField label="Your Email" />

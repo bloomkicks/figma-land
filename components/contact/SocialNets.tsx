@@ -11,9 +11,7 @@ const SocialNets = () => {
       direction="row"
       justifyContent="center"
       alignItems="center"
-      my={10}
       spacing={4}
-      mx="auto"
     >
       {nets.map((net) => (
         <Link href="#" passHref>

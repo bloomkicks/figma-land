@@ -2,7 +2,13 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 
-const PartnerItem = ({ name, logoSrc }: { name: string; logoSrc: string }) => {
+const PartnerItem = ({
+  name,
+  logoSrc,
+}: {
+  name: string;
+  logoSrc: string;
+}) => {
   return (
     <Stack
       textAlign="center"
@@ -10,8 +16,8 @@ const PartnerItem = ({ name, logoSrc }: { name: string; logoSrc: string }) => {
       py={2.5}
       px={2}
       height="165px"
-      minWidth="200px"
-      maxWidth="100%"
+      minWidth={{ xs: "200px", md: "23%" }}
+      maxWidth={{ xs: "100%", md: "25%" }}
       sx={{
         border: "1.6px solid black",
         borderColor: "#c5c5c5",

@@ -38,16 +38,15 @@ const Header = () => {
           <Box
             component="a"
             position="relative"
-            right={{ xs: 0, md: "30px" }}
             zIndex={10}
-            maxWidth="186px"
+            width="186px"
             sx={{
               position: {
                 xs: open ? "fixed" : "absolute",
                 md: "relative",
               },
               top: { xs: open ? 28 : 0, md: 0 },
-              left: { xs: 40, md: 0 },
+              left: { xs: 40, md: -30 },
             }}
           >
             <Image
