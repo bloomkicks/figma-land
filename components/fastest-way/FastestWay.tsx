@@ -7,10 +7,11 @@ import Box from "@mui/material/Box";
 const FastestWay = () => {
   return (
     <Stack
+      component="article"
       textAlign="center"
       width="85%"
       maxWidth="1366px"
-      sx={{ mb: 12, mx: "auto" }}
+      sx={{ mb: 22, mx: "auto" }}
       direction="row"
       alignItems="flex-start"
       justifyContent="center"

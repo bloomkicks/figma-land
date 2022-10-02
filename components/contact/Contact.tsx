@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 
 const Contact = () => {
   return (
-    <Box py={18.5} textAlign="center">
+    <Box component="article" py={18.5} textAlign="center">
       <Typography variant="h2" mb={2.5}>
         Contact Us
       </Typography>

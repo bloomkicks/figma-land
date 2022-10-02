@@ -5,7 +5,13 @@ import Box from "@mui/material/Box";
 
 const Partners = () => {
   return (
-    <Box textAlign="center" mb={22} maxWidth="85%" mx="auto">
+    <Box
+      component="article"
+      textAlign="center"
+      mb={22}
+      maxWidth="85%"
+      mx="auto"
+    >
       <Typography variant="h2" mb={2.2}>
         Partners
       </Typography>

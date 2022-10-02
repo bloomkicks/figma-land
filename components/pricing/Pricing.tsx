@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 const Pricing = () => {
   return (
     <Box
+      component="article"
       textAlign="center"
       width="100%"
       py={13}

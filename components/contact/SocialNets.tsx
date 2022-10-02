@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
@@ -15,16 +16,23 @@ const SocialNets = () => {
       mx="auto"
     >
       {nets.map((net) => (
-        <Box position="relative" height="40px" width="40px">
-          <Image
-            src={`/images/contact-us/${net}.png`}
-            layout="fill"
-            width="32px"
-            objectFit="contain"
-            objectPosition="center"
-            height={net === "twitter" ? "29px" : "32px"}
-          />
-        </Box>
+        <Link href="#" passHref>
+          <Box
+            component="a"
+            display="block"
+            position="relative"
+            height="40px"
+            width="40px"
+          >
+            <Image
+              src={`/images/contact-us/${net}.png`}
+              layout="fill"
+              objectFit="contain"
+              objectPosition="center"
+              height={net === "twitter" ? "29px" : "32px"}
+            />
+          </Box>
+        </Link>
       ))}
     </Stack>
   );

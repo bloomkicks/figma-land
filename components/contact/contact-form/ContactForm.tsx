@@ -12,6 +12,8 @@ const ContactForm = () => {
         bgcolor: "primary.contrastText",
         borderRadius: "15px",
         width: "90%",
+        minWidth: "350px",
+        maxWidth: '600px',
         mx: "auto",
         px: 2,
         pt: 5.5,

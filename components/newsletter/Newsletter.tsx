@@ -12,9 +12,10 @@ const Newsletter = () => {
 
   return (
     <Stack
+      component="article"
       direction={{ xs: "column", md: "row-reverse" }}
       textAlign={{ xs: "center", md: "left" }}
-      mb={12}
+      mb={22}
     >
       <Box>
         <Typography variant="h3">At your fingertips</Typography>

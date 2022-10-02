@@ -11,7 +11,7 @@ import type { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <Stack sx={{ width: "100%" }}>
+    <Stack>
       <Hero />
       <Features />
       <FastestWay />

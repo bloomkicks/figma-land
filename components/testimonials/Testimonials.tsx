@@ -7,12 +7,13 @@ import Box from "@mui/material/Box";
 const Testimonials = () => {
   return (
     <Box
+      component="article"
       maxWidth={{ xs: "75%", md: "55%" }}
       mx="auto"
       textAlign="center"
       pb={12}
     >
-      <Typography variant="h2" mb={12}>
+      <Typography variant="h2" mb={12} minWidth="270px" mx="auto">
         Testimonials
       </Typography>
       <Box maxWidth="50%" mx="auto" width="150px">

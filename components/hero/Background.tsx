@@ -15,7 +15,7 @@ const Background = () => {
       right="0.5px"
       width="100%"
       zIndex={-1}
-      height={{ xs: "850px", sm: "930px" }}
+      height={{ xs: "850px", md: "930px" }}
     >
       {isMobile ? (
         <Image

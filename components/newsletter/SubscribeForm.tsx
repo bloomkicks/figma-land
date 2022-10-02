@@ -15,7 +15,7 @@ const SubscribeForm = ({
 
   return (
     <Box
-      maxWidth="100%"
+      maxWidth="90%"
       width="350px"
       mx="auto"
       display={{
@@ -30,7 +30,8 @@ const SubscribeForm = ({
       <Typography variant="body1" mb={4.3}>
         Available exclusivery on Figmaland
       </Typography>
-      <FormGroup
+      <Box
+        component="form"
         sx={{ width: "100%" }}
         onSubmit={subscribeHandler}
       >
@@ -42,7 +43,7 @@ const SubscribeForm = ({
         <Button fullWidth type="submit">
           Subscribe
         </Button>
-      </FormGroup>
+      </Box>
     </Box>
   );
 };
