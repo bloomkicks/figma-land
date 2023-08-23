@@ -1,11 +1,13 @@
-import NavBar from "./NavBar";
-import SocialNets from "./SocialNets";
-import Link from "next/link";
+import { useState } from "react";
+
 import Box from "@mui/material/Box";
-import Image from "next/image";
 import Toolbar from "@mui/material/Toolbar";
 import AppBar from "@mui/material/AppBar";
-import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+
+import NavBar from "./NavBar";
+import WhiteSocials from "./WhiteSocials";
 
 const Header = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -34,7 +36,7 @@ const Header = () => {
         }}
       >
         <NavBar open={open} />
-        <Link href="/main" passHref>
+        <Link href="/" passHref>
           <Box
             component="a"
             position="relative"
@@ -45,8 +47,9 @@ const Header = () => {
                 xs: open ? "fixed" : "absolute",
                 md: "relative",
               },
-              top: { xs: open ? 28 : 0, md: 0 },
-              left: { xs: 40, md: -30 },
+              zIndex: 10,
+              top: { xs: open ? 26 : -2, md: -4 },
+              left: { xs: 40, md: 0 },
             }}
           >
             <Image
@@ -54,12 +57,22 @@ const Header = () => {
               width={186}
               height={58}
               layout="responsive"
+              alt="FigmaLand"
             />
           </Box>
         </Link>
-        <SocialNets isMobile={false} />
+        <WhiteSocials
+          isMobile={false}
+          sx={{
+            position: "absolute",
+            right: "10%",
+            top: "50%",
+            transform: "translateY(-45%)",
+          }}
+        />
         <Box
           component="button"
+          aria-label="toggle-mobile-menu-button"
           top="2.5px"
           onClick={menuClickHandler}
           display={{ xs: "block", md: "none" }}
@@ -80,6 +93,7 @@ const Header = () => {
         >
           <Image
             src="/images/general/ham-menu.png"
+            alt="Toggle menu"
             width={30}
             height={18}
           />

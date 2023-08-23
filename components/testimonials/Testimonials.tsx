@@ -1,8 +1,10 @@
 import Button from "@mui/material/Button";
-import Persona from "./Persona";
-import Image from "next/image";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import Image from "next/image";
+import Link from "next/link";
+
+import Persona from "./Persona";
 
 const Testimonials = () => {
   return (
@@ -19,6 +21,7 @@ const Testimonials = () => {
       <Box maxWidth="50%" mx="auto" width="150px">
         <Image
           src="/images/testimonials/IBM.png"
+          alt=""
           width={126.5}
           height={50.5}
           layout="responsive"
@@ -29,9 +32,8 @@ const Testimonials = () => {
         display={{ xs: "none", md: "block" }}
         my={8.5}
       >
-        Most calendars are designed for teams. Slate is designed
-        for freelancers who want a simple way to plan their
-        schedule.
+        Most calendars are designed for teams. Slate is designed for
+        freelancers who want a simple way to plan their schedule.
       </Typography>
       <Typography
         variant="h3"
@@ -41,14 +43,15 @@ const Testimonials = () => {
         mx="auto"
         my={8.5}
       >
-        Most calendars are designed for teams. Slate is designed
-        for freelancers who want a simple way to plan their
-        schedule.
+        Most calendars are designed for teams. Slate is designed for
+        freelancers who want a simple way to plan their schedule.
       </Typography>
       <Persona />
-      <Button sx={{ mt: 12, px: 5 }}>
-        <Typography variant="h3">More Testimonials</Typography>
-      </Button>
+      <Link href="#testimonials" passHref>
+        <Button component="a" sx={{ mt: 12, px: 5 }}>
+          <Typography variant="h3">More Testimonials</Typography>
+        </Button>
+      </Link>
     </Box>
   );
 };

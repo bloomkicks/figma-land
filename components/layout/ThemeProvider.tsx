@@ -2,6 +2,7 @@ import {
   ThemeProvider as Provider,
   createTheme,
 } from "@mui/material/styles";
+
 import CssBaseline from "@mui/material/CssBaseline";
 
 const theme = createTheme({
@@ -32,35 +33,42 @@ const theme = createTheme({
       "-apple-system",
       "sans-serif",
     ].join(","),
-    fontSize: 18,
+    fontSize: 16,
     h2: {
-      fontSize: 48,
-      lineHeight: "55px",
+      // fontSize: 48,
+      fontSize: "3rem",
+      lineHeight: "1.15",
     },
     h3: {
-      fontSize: 20,
-      lineHeight: "28px",
+      // fontSize: 20,
+      fontSize: "1.25rem",
       fontWeight: "bold",
+      lineHeight: "1.4",
     },
     h4: {
-      fontSize: 28,
-      lineHeight: "40px",
+      // fontSize: 28,
+      fontSize: "1.75rem",
+      lineHeight: "1.43",
     },
     h5: {
-      fontSize: 16,
-      lineHeight: "23px",
+      // fontSize: 16,
+      fontSize: "1rem",
+      lineHeight: "1.44",
     },
     h6: {
-      fontSize: 15,
-      lineHeight: "28px",
+      // fontSize: 15,
+      fontSize: "0.938rem",
+      lineHeight: "1.87",
     },
     button: {
-      fontSize: 20,
-      lineHeight: "20x",
+      // fontSize: 20,
+      fontSize: "1.25rem",
+      lineHeight: "1",
     },
     body1: {
-      fontSize: 18,
-      lineHeight: "25px",
+      // fontSize: 18,
+      fontSize: "1.125rem",
+      lineHeight: "1.4",
     },
   },
   components: {
@@ -88,7 +96,7 @@ const theme = createTheme({
             border: "1px solid #E8E8E8",
           },
           "& .MuiOutlinedInput-notchedOutline > legend": {
-            maxWidth: '0.01px !important'
+            maxWidth: "0.01px !important",
           },
           "& .MuiInputBase-input": {
             zIndex: "1",
@@ -100,7 +108,7 @@ const theme = createTheme({
             left: 15,
           },
           "& .MuiInputLabel-shrink": {
-            transform: "translate(15px, -18px) scale(0.8)",
+            transform: "translate(15px, -23px) scale(0.8)",
           },
         },
       },

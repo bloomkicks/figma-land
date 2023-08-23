@@ -1,8 +1,9 @@
-import AuthorList from "./author-list/AuthorList";
-import Contacts from "./Contacts";
-import SocialNets from "../header/SocialNets";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
+
+import AuthorColumnLists from "./AuthorColumnList";
+import WhiteSocials from "../header/WhiteSocials";
+import Contacts from "./Contacts";
 
 const Footer = () => {
   return (
@@ -21,12 +22,12 @@ const Footer = () => {
         px: 5,
       }}
     >
-      <AuthorList />
+      <AuthorColumnLists />
       <Box component="section" ml={{ lg: "125px !important" }}>
         <Contacts />
-        <SocialNets
+        <WhiteSocials
           sx={{
-            display: "block",
+            display: "flex",
             mx: { xs: "auto", md: 0 },
             width: "fit-content",
             mt: 5,

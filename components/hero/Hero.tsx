@@ -1,8 +1,9 @@
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import Background from "./Background";
 import Stack from "@mui/material/Stack";
+
+import Background from "./Background";
 
 const Hero = () => {
   return (

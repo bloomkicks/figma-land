@@ -1,10 +1,12 @@
-import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
+
 import Stack from "@mui/material/Stack";
-import SubscribeForm from "./SubscribeForm";
-import Image from "next/image";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import Image from "next/image";
+
+import SubscribeForm from "./SubscribeForm";
 
 const Newsletter = () => {
   const theme = useTheme();
@@ -17,6 +19,7 @@ const Newsletter = () => {
       justifyContent="center"
       alignItems="center"
       textAlign={{ xs: "center", md: "left" }}
+      px={3}
       mb={22}
     >
       <Box>
@@ -53,6 +56,7 @@ const Newsletter = () => {
       >
         <Image
           src="/images/general/newsletter-vector.png"
+          alt=""
           width={389}
           height={295}
           layout="responsive"

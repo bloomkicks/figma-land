@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import Drawer from "@mui/material/Drawer";
 import Stack from "@mui/material/Stack";
 
@@ -10,9 +12,14 @@ const MobileContainer = ({
   open: boolean;
   props?: any;
 }) => {
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "auto";
+  }, [open]);
+
   return (
     <Drawer
       variant="persistent"
+      keepMounted
       open={open}
       anchor="right"
       sx={{
@@ -36,7 +43,6 @@ const MobileContainer = ({
           transition: "transform 0.4s ease-in-out",
           left: 0,
           top: 0,
-          mr: 10,
         }}
         {...props}
       >

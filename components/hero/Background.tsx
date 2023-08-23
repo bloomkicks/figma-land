@@ -1,13 +1,6 @@
-import { useTheme } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import Box from "@mui/material/Box";
-import Image from "next/image";
-import React from "react";
 
 const Background = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-
   return (
     <Box
       position="absolute"
@@ -15,29 +8,24 @@ const Background = () => {
       right="0.5px"
       width="100%"
       zIndex={-1}
-      height={{ xs: "850px", md: "930px" }}
+      height={{ xs: "850px", xl: "880px" }}
+      maxHeight="100vh"
     >
-      {isMobile ? (
-        <Image
-          src="/images/general/hero-mobile-background.png"
-          width={1777}
-          height={1042}
-          layout="fill"
-          objectFit="cover"
-          objectPosition="bottom"
-          alt=""
-        />
-      ) : (
-        <Image
-          src="/images/general/hero-background.png"
-          width={1777}
-          height={1042}
-          layout="fill"
-          objectFit="cover"
-          objectPosition="bottom"
-          alt=""
-        />
-      )}
+      <Box
+        component="img"
+        src="/images/general/hero-background.png"
+        sizes="(min-width: 640px) 640w, 1777w"
+        srcSet="/images/general/hero-background.png 1777w, /images/general/hero-mobile-background.png 640w"
+        width={1777}
+        height={1042}
+        sx={{
+          objectFit: "cover",
+          objectPosition: "bottom",
+          width: "100%",
+          height: "100%",
+        }}
+        alt=""
+      />
     </Box>
   );
 };

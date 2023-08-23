@@ -1,6 +1,7 @@
-import OptionList from "./option-list/OptionList";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+
+import OptionList from "./OptionList";
 
 const Pricing = () => {
   return (
@@ -11,11 +12,7 @@ const Pricing = () => {
       py={{ xs: 13, md: 16 }}
       bgcolor="background.paper"
     >
-      <Typography
-        variant="h2"
-        color="primary.contrastText"
-        mb={2}
-      >
+      <Typography variant="h2" color="primary.contrastText" mb={2}>
         Pricing
       </Typography>
       <Typography

@@ -1,7 +1,6 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import NextLink from "next/link";
-import React from "react";
 
 const NavLink = ({ href, name }: { href: string; name: string }) => {
   return (

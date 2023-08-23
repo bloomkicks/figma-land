@@ -1,4 +1,6 @@
-import Contact from "../components/contact/Contact";
+import type { NextPage } from "next";
+
+import ContactUs from "../components/contact-us/ContactUs";
 import Pricing from "../components/pricing/Pricing";
 import Testimonials from "../components/testimonials/Testimonials";
 import Partners from "../components/partners/Partners";
@@ -7,7 +9,6 @@ import Newsletter from "../components/newsletter/Newsletter";
 import Stack from "@mui/material/Stack";
 import Features from "../components/features/Features";
 import Hero from "../components/hero/Hero";
-import type { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
@@ -18,8 +19,8 @@ const Home: NextPage = () => {
       <Newsletter />
       <Partners />
       <Testimonials />
-      <Pricing /> 
-      <Contact />
+      <Pricing />
+      <ContactUs />
     </Stack>
   );
 };

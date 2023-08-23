@@ -1,8 +1,8 @@
-import Image from "next/image";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
+import Image from "next/image";
 
 const FastestWay = () => {
   return (
@@ -51,6 +51,7 @@ const FastestWay = () => {
       >
         <Image
           src="/images/general/laptop.png"
+          alt=""
           width={379}
           height={212}
           layout="responsive"

@@ -17,7 +17,7 @@ const SubscribeForm = ({
     <Box
       maxWidth="90%"
       width={{ xs: 400, md: 500 }}
-      minWidth="340px"
+      minWidth="320px"
       display={{
         xs: isDesktop ? "none" : "block",
         md: isDesktop ? "block" : "none",

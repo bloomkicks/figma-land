@@ -1,8 +1,8 @@
 import useMediaQuery from "@mui/material/useMediaQuery";
 import useTheme from "@mui/material/styles/useTheme";
+
 import Box from "@mui/material/Box";
 import Image from "next/image";
-import React from "react";
 
 const Video = ({ mobile }: { mobile?: boolean }) => {
   const theme = useTheme();
@@ -21,6 +21,7 @@ const Video = ({ mobile }: { mobile?: boolean }) => {
     >
       <Image
         loading="eager"
+        alt="Video preview"
         src={
           isDesktop
             ? "/images/features/video-picture-desktop.png"
@@ -40,7 +41,7 @@ const Video = ({ mobile }: { mobile?: boolean }) => {
       >
         <Image
           src="/images/features/video-picture-play.png"
-          alt=""
+          alt="Play button"
           layout="fill"
         />
       </Box>

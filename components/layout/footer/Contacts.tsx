@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
+import Image from "next/image";
 
 let contacts = [
   {
@@ -27,9 +27,11 @@ const Contacts = () => {
           spacing={1.8}
           alignItems="center"
           sx={{ mb: 3 }}
+          key={contact.name}
         >
           <Image
             src={`/images/footer/${contact.name}.png`}
+            alt=""
             width={contact.width}
             height={contact.height}
           />

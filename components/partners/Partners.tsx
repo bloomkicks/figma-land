@@ -1,7 +1,8 @@
 import Button from "@mui/material/Button";
-import PartnerList from "./partner-list/PartnerList";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+
+import PartnerList from "./PartnerList";
 
 const Partners = () => {
   return (

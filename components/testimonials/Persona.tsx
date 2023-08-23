@@ -1,7 +1,7 @@
 import Typography from "@mui/material/Typography";
-import Image from "next/image";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
+import Image from "next/image";
 
 const Persona = () => {
   return (
@@ -16,6 +16,7 @@ const Persona = () => {
       >
         <Image
           src="/images/testimonials/profile-pic.png"
+          alt="Image not found"
           width={42}
           height={42}
           objectFit="contain"

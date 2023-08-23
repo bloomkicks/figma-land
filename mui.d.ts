@@ -1,6 +1,6 @@
-import * as createPalette from "@material-ui/core/styles/createPalette";
+import { createTheme } from "@mui/material/styles";
 
-declare module "@material-ui/core/styles/createPalette" {
+declare module "@mui/material/styles" {
   interface PaletteOptions {
     darkBg?: { text?: string };
   }

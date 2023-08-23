@@ -20,11 +20,10 @@ const DesktopContainer = ({
       sx={{
         justifyContent: "flex-start",
         alignItems: "center",
-        transition: "transform 0.4s ease-in-out",
-        transform: "translateX(0)",
-        mr: 10,
-        left: 0,
-        top: 0,
+        position: "absolute",
+        top: "50%",
+        left: "0%",
+        transform: "translateY(-50%)",
       }}
       {...props}
     >
