@@ -20,7 +20,7 @@ const Testimonials = () => {
       </Typography>
       <Box maxWidth="50%" mx="auto" width="150px">
         <Image
-          src="/images/testimonials/IBM.png"
+          src="./images/testimonials/IBM.png"
           alt=""
           width={126.5}
           height={50.5}

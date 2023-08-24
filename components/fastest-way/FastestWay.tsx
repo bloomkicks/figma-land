@@ -50,7 +50,7 @@ const FastestWay = () => {
         mt={{ xs: 8.5, lg: 0 }}
       >
         <Image
-          src="/images/general/laptop.png"
+          src="./images/general/laptop.png"
           alt=""
           width={379}
           height={212}

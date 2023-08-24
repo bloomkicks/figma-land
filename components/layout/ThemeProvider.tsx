@@ -122,12 +122,13 @@ const theme = createTheme({
 });
 
 theme.typography.h1 = {
-  fontSize: 48,
-  lineHeight: "55px",
+  // fontSize: 48,
+  fontSize: "3rem",
+  lineHeight: "1.15",
   fontWeight: "400",
   [theme.breakpoints.up("md")]: {
     fontSize: 74,
-    lineHeight: "84px",
+    lineHeight: "1.135",
     fontWeight: "bold",
   },
 };

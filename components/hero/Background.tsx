@@ -13,9 +13,9 @@ const Background = () => {
     >
       <Box
         component="img"
-        src="/images/general/hero-background.png"
+        src="./images/general/hero-background.png"
         sizes="(min-width: 640px) 640w, 1777w"
-        srcSet="/images/general/hero-background.png 1777w, /images/general/hero-mobile-background.png 640w"
+        srcSet="images/general/hero-background.png 1777w, images/general/hero-mobile-background.png 640w"
         width={1777}
         height={1042}
         sx={{

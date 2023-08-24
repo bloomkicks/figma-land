@@ -4,19 +4,19 @@ import ContactEntry from "./ContactEntry";
 
 let contacts = [
   {
-    iconSrc: "/images/contact-us/location.png",
+    iconSrc: "./images/contact-us/location.png",
     iconWidth: 26,
     iconHeight: 32,
     text: "6386 Spring St Undefined Anchorage, Georgia 12473 United States",
   },
   {
-    iconSrc: "/images/contact-us/phone.png",
+    iconSrc: "./images/contact-us/phone.png",
     iconWidth: 21,
     iconHeight: 34,
     text: "(843) 555-0130",
   },
   {
-    iconSrc: "/images/contact-us/email.png",
+    iconSrc: "./images/contact-us/email.png",
     iconWidth: 27,
     iconHeight: 22,
     text: "willie.jennings@example.com",

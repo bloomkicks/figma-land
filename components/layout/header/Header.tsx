@@ -53,7 +53,7 @@ const Header = () => {
             }}
           >
             <Image
-              src="/logos/light-logo.png"
+              src="./logos/light-logo.png"
               width={186}
               height={58}
               layout="responsive"
@@ -92,7 +92,7 @@ const Header = () => {
           }}
         >
           <Image
-            src="/images/general/ham-menu.png"
+            src="./images/general/ham-menu.png"
             alt="Toggle menu"
             width={30}
             height={18}

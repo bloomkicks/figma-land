@@ -8,35 +8,35 @@ import Partner from "./Partner";
 let partners = [
   {
     name: "Google",
-    logoSrc: "/images/partners/google.png",
+    logoSrc: "./images/partners/google.png",
   },
   {
     name: "Amazon",
-    logoSrc: "/images/partners/amazon.png",
+    logoSrc: "./images/partners/amazon.png",
   },
   {
     name: "Microsoft",
-    logoSrc: "/images/partners/microsoft.png",
+    logoSrc: "./images/partners/microsoft.png",
   },
   {
     name: "Uber",
-    logoSrc: "/images/partners/uber.png",
+    logoSrc: "./images/partners/uber.png",
   },
   {
     name: "Dropbox",
-    logoSrc: "/images/partners/dropbox.png",
+    logoSrc: "./images/partners/dropbox.png",
   },
   {
     name: "Google",
-    logoSrc: "/images/partners/google.png",
+    logoSrc: "./images/partners/google.png",
   },
   {
     name: "Uber",
-    logoSrc: "/images/partners/uber.png",
+    logoSrc: "./images/partners/uber.png",
   },
   {
     name: "Amazon",
-    logoSrc: "/images/partners/amazon.png",
+    logoSrc: "./images/partners/amazon.png",
   },
 ];
 

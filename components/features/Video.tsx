@@ -24,8 +24,8 @@ const Video = ({ mobile }: { mobile?: boolean }) => {
         alt="Video preview"
         src={
           isDesktop
-            ? "/images/features/video-picture-desktop.png"
-            : "/images/features/video-picture-mobile.png"
+            ? "./images/features/video-picture-desktop.png"
+            : "./images/features/video-picture-mobile.png"
         }
         width={386}
         height={230}
@@ -40,7 +40,7 @@ const Video = ({ mobile }: { mobile?: boolean }) => {
         sx={{ transform: "translate(-50%, -50%)" }}
       >
         <Image
-          src="/images/features/video-picture-play.png"
+          src="./images/features/video-picture-play.png"
           alt="Play button"
           layout="fill"
         />

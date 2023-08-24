@@ -8,7 +8,7 @@ const Map = () => {
       mx="auto !important"
     >
       <Image
-        src="/images/contact-us/map.png"
+        src="./images/contact-us/map.png"
         alt="Image not found"
         width={516}
         height={323.2}

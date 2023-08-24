@@ -55,7 +55,7 @@ const Newsletter = () => {
         height="auto"
       >
         <Image
-          src="/images/general/newsletter-vector.png"
+          src="./images/general/newsletter-vector.png"
           alt=""
           width={389}
           height={295}

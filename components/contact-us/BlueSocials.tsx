@@ -27,7 +27,7 @@ const BlueSocials = () => {
             }}
           >
             <Image
-              src={`/images/contact-us/${net}.png`}
+              src={`./images/contact-us/${net}.png`}
               layout="fill"
               objectFit="contain"
               objectPosition="center"

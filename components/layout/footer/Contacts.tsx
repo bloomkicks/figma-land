@@ -30,7 +30,7 @@ const Contacts = () => {
           key={contact.name}
         >
           <Image
-            src={`/images/footer/${contact.name}.png`}
+            src={`./images/footer/${contact.name}.png`}
             alt=""
             width={contact.width}
             height={contact.height}

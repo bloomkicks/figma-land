@@ -40,7 +40,7 @@ const WhiteSocials = ({
             }}
           >
             <Image
-              src={`/images/light-social-nets/${logo}.png`}
+              src={`./images/light-social-nets/${logo}.png`}
               alt={logo}
               width={40}
               height={logo === "twitter" ? 33.3 : 39.5}

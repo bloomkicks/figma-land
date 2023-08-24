@@ -15,7 +15,7 @@ const Persona = () => {
         borderColor="black"
       >
         <Image
-          src="/images/testimonials/profile-pic.png"
+          src="./images/testimonials/profile-pic.png"
           alt="Image not found"
           width={42}
           height={42}
