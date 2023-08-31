@@ -55,11 +55,9 @@ const PartnerList = () => {
         mx: { md: 5 },
       }}
     >
-      {partners
-        .slice(0, isDesktop ? partners.length : 3)
-        .map((partner, i) => (
-          <Partner {...partner} key={partner.name + i} />
-        ))}
+      {partners.slice(0, isDesktop ? partners.length : 3).map((partner, i) => (
+        <Partner {...partner} key={partner.name + i} />
+      ))}
     </Stack>
   );
 };

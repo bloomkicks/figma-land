@@ -21,9 +21,7 @@ const NavBar = ({ open }: { open: boolean }) => {
         <NavLink
           key={link}
           href={`#`}
-          name={
-            link[0].toUpperCase() + link.split("").slice(1).join("")
-          }
+          name={link[0].toUpperCase() + link.split("").slice(1).join("")}
         />
       ))}
       <WhiteSocials

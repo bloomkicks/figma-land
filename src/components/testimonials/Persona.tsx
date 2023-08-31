@@ -32,10 +32,7 @@ const Persona = () => {
         >
           Organize across
         </Typography>
-        <Typography
-          variant="h5"
-          display={{ xs: "none", sm: "block" }}
-        >
+        <Typography variant="h5" display={{ xs: "none", sm: "block" }}>
           Organize across
         </Typography>
         <Typography variant="body1" sx={{ fontSize: "13.5px" }}>

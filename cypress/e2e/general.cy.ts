@@ -1,4 +1,4 @@
-describe("The entire FigmaLand website", () => {
+describe("General website", () => {
   beforeEach(() => {
     cy.visit("http://localhost:3000");
   });

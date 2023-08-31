@@ -27,7 +27,7 @@ const ContactEntry = ({
         height={iconHeight}
         sx={{
           maxHeight: "40px",
-          objectFit: 'contain'
+          objectFit: "contain",
         }}
       ></Box>
       <Typography

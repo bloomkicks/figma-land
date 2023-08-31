@@ -4,11 +4,7 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 
-const SubscribeForm = ({
-  isDesktop,
-}: {
-  isDesktop?: boolean;
-}) => {
+const SubscribeForm = ({ isDesktop }: { isDesktop?: boolean }) => {
   function subscribeHandler(e: any) {
     e.preventDefault();
   }
@@ -24,9 +20,7 @@ const SubscribeForm = ({
       }}
       mt={{ xs: 0, md: 8.5 }}
     >
-      <Typography variant="h3">
-        Subscribe to our Newsletter
-      </Typography>
+      <Typography variant="h3">Subscribe to our Newsletter</Typography>
       <Typography variant="body1" mb={4.3}>
         Available exclusivery on Figmaland
       </Typography>
@@ -41,10 +35,7 @@ const SubscribeForm = ({
           flexWrap: "no-wrap",
         }}
       >
-        <TextField
-          label="Your Email"
-          sx={{ mb: 1.5, width: "100%" }}
-        />
+        <TextField label="Your Email" sx={{ mb: 1.5, width: "100%" }} />
         <Button type="submit" sx={{ px: 5 }}>
           Subscribe
         </Button>

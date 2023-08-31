@@ -3,10 +3,7 @@ import Image from "next/image";
 
 const Map = () => {
   return (
-    <Box
-      display={{ xs: "none", md: "block" }}
-      mx="auto !important"
-    >
+    <Box display={{ xs: "none", md: "block" }} mx="auto !important">
       <Image
         src="./images/contact-us/map.png"
         alt="Image not found"

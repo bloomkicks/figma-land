@@ -30,7 +30,7 @@ const Hero = () => {
           The best products start with Figma
         </Typography>
         <Typography variant="h4" color="primary.contrastText" mt={2}>
-          Most calendars are designed for teams.{' '}
+          Most calendars are designed for teams.{" "}
           <Typography variant="inherit" display={{ xs: "none", sm: "inline" }}>
             Slate is designed for freelancers
           </Typography>

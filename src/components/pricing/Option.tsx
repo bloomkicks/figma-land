@@ -31,11 +31,7 @@ const Option = ({
         maxWidth: { xs: "450px", md: "auto" },
       }}
     >
-      <Typography
-        variant="h3"
-        textTransform="uppercase"
-        sx={{ mb: 1 }}
-      >
+      <Typography variant="h3" textTransform="uppercase" sx={{ mb: 1 }}>
         {name}
       </Typography>
       <Typography variant="h5" sx={{ maxWidth: "60%", mx: "auto" }}>

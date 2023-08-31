@@ -28,16 +28,11 @@ const FastestWay = () => {
         </Typography>
         <Typography variant="h4" mb="auto">
           Most calendars are designed for teams.{" "}
-          <Typography
-            variant="inherit"
-            display={{ xs: "none", md: "block" }}
-          >
+          <Typography variant="inherit" display={{ xs: "none", md: "block" }}>
             Slate is designed for freelancers
           </Typography>
         </Typography>
-        <Button sx={{ px: 5, mt: { xs: 8.5, md: 12 } }}>
-          Try For Free
-        </Button>
+        <Button sx={{ px: 5, mt: { xs: 8.5, md: 12 } }}>Try For Free</Button>
       </Box>
       <Box
         maxWidth="620px"

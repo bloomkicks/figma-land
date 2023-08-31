@@ -1,7 +1,4 @@
-import {
-  ThemeProvider as Provider,
-  createTheme,
-} from "@mui/material/styles";
+import { ThemeProvider as Provider, createTheme } from "@mui/material/styles";
 
 import CssBaseline from "@mui/material/CssBaseline";
 
@@ -27,12 +24,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: [
-      "Rubik",
-      "Roboto",
-      "-apple-system",
-      "sans-serif",
-    ].join(","),
+    fontFamily: ["Rubik", "Roboto", "-apple-system", "sans-serif"].join(","),
     fontSize: 16,
     h2: {
       // fontSize: 48,
@@ -133,11 +125,7 @@ theme.typography.h1 = {
   },
 };
 
-const ThemeProvider = ({
-  children,
-}: {
-  children: React.ReactNode;
-}) => {
+const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   return (
     <Provider theme={theme}>
       <CssBaseline />

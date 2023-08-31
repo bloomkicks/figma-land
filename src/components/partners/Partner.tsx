@@ -2,13 +2,7 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 
-const Partner = ({
-  name,
-  logoSrc,
-}: {
-  name: string;
-  logoSrc: string;
-}) => {
+const Partner = ({ name, logoSrc }: { name: string; logoSrc: string }) => {
   return (
     <Stack
       textAlign="center"

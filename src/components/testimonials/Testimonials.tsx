@@ -27,13 +27,9 @@ const Testimonials = () => {
           layout="responsive"
         />
       </Box>
-      <Typography
-        variant="h4"
-        display={{ xs: "none", md: "block" }}
-        my={8.5}
-      >
-        Most calendars are designed for teams. Slate is designed for
-        freelancers who want a simple way to plan their schedule.
+      <Typography variant="h4" display={{ xs: "none", md: "block" }} my={8.5}>
+        Most calendars are designed for teams. Slate is designed for freelancers
+        who want a simple way to plan their schedule.
       </Typography>
       <Typography
         variant="h3"
@@ -43,8 +39,8 @@ const Testimonials = () => {
         mx="auto"
         my={8.5}
       >
-        Most calendars are designed for teams. Slate is designed for
-        freelancers who want a simple way to plan their schedule.
+        Most calendars are designed for teams. Slate is designed for freelancers
+        who want a simple way to plan their schedule.
       </Typography>
       <Persona />
       <Link href="#testimonials" passHref>
