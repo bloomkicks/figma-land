@@ -13,6 +13,9 @@ describe("General website", () => {
     cy.get("header .MuiDrawer-root > .MuiPaper-root").should(
       "be.visible"
     );
+
+    cy.viewport(1280, 768);
+    cy.get("header .MuiDrawer-root").should("not.exist");
   });
 });
 

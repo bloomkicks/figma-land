@@ -19,7 +19,6 @@ const MobileContainer = ({
   return (
     <Drawer
       variant="persistent"
-      keepMounted
       open={open}
       anchor="right"
       sx={{

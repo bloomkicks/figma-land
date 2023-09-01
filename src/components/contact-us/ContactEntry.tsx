@@ -22,6 +22,7 @@ const ContactEntry = ({
     >
       <Box
         component="img"
+        alt=""
         src={iconSrc}
         width={iconWidth}
         height={iconHeight}
